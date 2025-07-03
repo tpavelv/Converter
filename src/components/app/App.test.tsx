@@ -8,6 +8,7 @@ import { renderWithRedux } from "../../test/utils.tsx";
 describe("render all App component", function () {
   it("should render App", () => {
     renderWithRedux(<App />);
+    screen.debug();
     expect(screen.getByText(/Конвертер валют онлайн/i)).toBeInTheDocument();
   });
 
